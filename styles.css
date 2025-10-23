@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #0d1117;
+  background: #0d1117; /* Dark background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,18 +13,18 @@ body {
   overflow: hidden;
 }
 
-/* Loader Circle */
+/* Loader Circle Styles */
 .loader {
   width: 60px;
   height: 60px;
-  border: 6px solid #1f6feb;
-  border-top-color: transparent;
+  border: 6px solid #1f6feb; /* Blue border */
+  border-top-color: transparent; /* Makes the spin effect */
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; /* Starts the animation */
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Centers it */
 }
 
 @keyframes spin {
@@ -39,14 +39,14 @@ iframe {
   width: 100vw;
   height: 100vh;
   border: none;
-  opacity: 0;
+  opacity: 0; /* Initially fully transparent */
   background: white;
   transition: opacity 0.6s ease;
   z-index: 10;
-  display: none;
+  display: none; /* Initially hidden */
 }
 
 iframe.visible {
-  display: block;
-  opacity: 1;
+  display: block; /* Show it */
+  opacity: 1; /* Fade it in */
 }
